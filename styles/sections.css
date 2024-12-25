@@ -1,0 +1,100 @@
+#intro {
+  width: 1366px;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-image: url("/assets/images/Background_Intro.png");
+  background-size: cover;
+  background-position: center;
+
+  .info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+
+    header {
+      height: 327px;
+      width: 680px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-left: 180px;
+      margin-right: 180px;
+
+      img {
+        margin-bottom: 56px;
+      }
+
+      .subtitle {
+        font: var(--subtitle);
+      }
+
+      .text-sm {
+        font: var(--text-sm);
+        color: var(--gray-400);
+      }
+
+      h1 {
+        margin-top: 8px;
+        margin-bottom: 20px;
+        font: var(--title-lg);
+      }
+
+      span {
+        color: var(--red-color);
+      }
+    }
+  }
+
+  .tags {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      display: grid;
+      grid-auto-flow: column;
+      width: 754px;
+      height: 40px;
+      gap: 16px;
+
+      li {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 114px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: var(--gray-300);
+        gap: 8px;
+        padding-inline: 16px;
+        padding-block: 9px;
+        font: var(--text-md);
+
+        .color-red{
+          fill: var(--red-color); /* Altera a cor para vermelho */
+        }
+
+        .color-gray {
+          fill: var(--gray-500);
+        }
+
+        .color-blue {
+          fill: var(--blue-color);
+        }
+
+        .color-yellow {
+          fill: var(--yellow-color);
+        }
+
+        .color-green {
+          fill: var(--green-color);
+        }
+      }
+    }
+  }
+}
