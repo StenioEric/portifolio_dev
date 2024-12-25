@@ -5,57 +5,65 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 183px;
+  /* margin-bottom: 183px; */
 
   background-image: url("/assets/images/Background_Intro.png");
   background-size: cover;
-  /* background-position: initial; */
+  background-position: center;
 
-  .info {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 80px;
+  .container {
+    width: 1040px;
+    height: 447px;
+    margin-top: 120px;
+    margin-bottom: 183px;
 
-    header {
-      height: 327px;
-      width: 680px;
+    .info {
       display: flex;
       justify-content: center;
-      align-items: center;
       flex-direction: column;
-      margin-left: 180px;
-      margin-right: 180px;
-
-      img {
-        margin-bottom: 56px;
-      }
-
-      .subtitle {
-        font: var(--subtitle);
-      }
-
-      .text-sm {
-        font: var(--text-sm);
-        color: var(--gray-400);
-        display: inherit;
-        justify-content: inherit;/* Centraliza horizontalmente */
-        align-items: center; /* Centraliza verticalmente */
-        /* height: 100vh; contêiner ocupa a altura total da tela */
-        text-align: center; /* Garante alinhamento centralizado do texto */
-      }
-
-      h1 {
-        height:67px;
-        width: inherit;
-        display: inherit;
-        justify-content: inherit;
-        margin-top: 8px;
-        margin-bottom: 20px;
-        font: var(--title-lg);
-      }
-
-      span {
-        color: var(--red-color);
+      margin-bottom: 80px;
+  
+      header {
+        height: 327px;
+        width: 680px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 180px;
+        margin-right: 180px;
+  
+        img {
+          margin-bottom: 56px;
+        }
+  
+        .subtitle {
+          font: var(--subtitle);
+        }
+  
+        .text-sm {
+          font: var(--text-sm);
+          color: var(--gray-400);
+          display: inherit;
+          justify-content: inherit;/* Centraliza horizontalmente */
+          align-items: center; /* Centraliza verticalmente */
+          /* height: 100vh; contêiner ocupa a altura total da tela */
+          text-align: center; /* Garante alinhamento centralizado do texto */
+        }
+  
+        h1 {
+          height:67px;
+          width: inherit;
+          display: inherit;
+          justify-content: inherit;
+          margin-top: 8px;
+          margin-bottom: 20px;
+          font: var(--title-lg);
+        }
+  
+        span {
+          color: var(--red-color);
+        }
       }
     }
   }
@@ -107,4 +115,12 @@
       }
     }
   }
+
+  .caret-double {
+    display: grid;
+    place-items: center; /* Centraliza horizontal e verticalmente */
+    margin-top: 94px;
+    margin-bottom: 57px;
+  }
+  
 }
