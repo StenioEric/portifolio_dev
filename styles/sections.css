@@ -2,6 +2,7 @@
   width: 1366px;
   height: 750px;
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -22,7 +23,7 @@
       justify-content: center;
       flex-direction: column;
       margin-bottom: 80px;
-  
+
       header {
         height: 327px;
         width: 680px;
@@ -32,27 +33,27 @@
         flex-direction: column;
         margin-left: 180px;
         margin-right: 180px;
-  
+
         img {
           margin-bottom: 56px;
         }
-  
+
         .subtitle {
           font: var(--subtitle);
         }
-  
+
         .text-sm {
           font: var(--text-sm);
           color: var(--gray-400);
           display: inherit;
-          justify-content: inherit;/* Centraliza horizontalmente */
+          justify-content: inherit; /* Centraliza horizontalmente */
           align-items: center; /* Centraliza verticalmente */
           /* height: 100vh; contêiner ocupa a altura total da tela */
           text-align: center; /* Garante alinhamento centralizado do texto */
         }
-  
+
         h1 {
-          height:67px;
+          height: 67px;
           width: inherit;
           display: inherit;
           justify-content: inherit;
@@ -60,7 +61,7 @@
           margin-bottom: 20px;
           font: var(--title-lg);
         }
-  
+
         span {
           color: var(--red-color);
         }
@@ -122,5 +123,58 @@
     margin-top: 94px;
     margin-bottom: 57px;
   }
-  
+}
+
+#projects {
+  width: 1366px;
+  height: 917px;
+  display: block;
+  margin-top: 57px;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+
+    margin-top: 72px;
+
+    h3 {
+      font: var(--subtitle);
+      color: var(--red-color);
+    }
+
+    h2 {
+      margin-top: 8px;
+      margin-bottom: 56px;
+    }
+  }
+
+  .grid {
+    width: 1040px;
+    height: 584px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+
+    .card {
+      background-color: var(--gray-300);
+      padding: 12px;
+      border-radius: 10px;
+
+      h4 {
+        font: var(--title-sm);
+        margin-block: 8px;
+      }
+
+      small {
+        font: var(--text-sm);
+        color: var(--gray-500);
+      }
+
+      img {
+        border-radius: 10px;
+      }
+    }
+  }
 }
