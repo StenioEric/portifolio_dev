@@ -10,7 +10,7 @@
   --red-color: #E3646E;
   --purple-color: #BB72E9;
   --blue-color: #3996DB;
-  --green-clor: #82BC4F;
+  --green-color: #82BC4F;
   --yellow-color: #EABD5F;
 
   /* BASE */
@@ -31,7 +31,7 @@
   --subtitle: 400 16px/140% var(--font-family-incon);
 
   --font-family-maven :'Maven Pro',sans-serif;
-  --text-sm: 400 14px/10% var(--font-family-maven);  
+  --text-sm: 400 14px/140% var(--font-family-maven);  
   --text-md: 400 14px/140% var(--font-family-maven);  
 
   --text: 400 16px/140% var(--font-family-maven);
