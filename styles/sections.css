@@ -4,8 +4,8 @@
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  /* align-items: center; */
+  /* flex-direction: column; */
   /* margin-bottom: 183px; */
 
   background-image: url("/assets/images/Background_Intro.png");
@@ -20,13 +20,13 @@
 
     .info {
       display: flex;
-      justify-content: center;
-      flex-direction: column;
+      /* justify-content: center; */
+      /* flex-direction: column; */
       margin-bottom: 80px;
 
       header {
-        height: 327px;
-        width: 680px;
+        /* height: 327px; */
+        /* width: 680px; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -189,8 +189,8 @@
     margin-bottom: 56px; /* Espaço entre header e container */
 
     h3 {
-      font: var(--subtitle);
       margin-top: 88px;
+      font: var(--subtitle);
       color: var(--red-color);
     }
 
@@ -200,8 +200,9 @@
   }
 
   .container {
+    width: 100%;
     display: flex;
-    place-items: center;
+    justify-content: center;
   }
 
   .grid {
@@ -232,3 +233,65 @@
   }
 }
 
+#contact {
+  width: 1366px;
+  height: 787px;
+
+  background-image: url(/assets/images/Background_Contacts.png);
+  background-size: cover;
+  background-position: center;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-top: 128px;
+    margin-bottom: 48px;
+
+    h3 {
+      font: var(--subtitle);
+      color: var(--purple-color);
+    }
+
+    h2 {
+      font: var(--title-md);
+      margin-block: 8px;
+    }
+  }
+
+  .container {
+    width: 1366px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+      align-items: center;
+      width: 400px;
+      list-style: none;
+      margin-bottom: 200px;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        background-color: var(--gray-300);
+        margin-bottom: 16px;
+        padding-block: 23px;
+        border-radius: 8px;
+        padding-inline: 20px;
+
+        img {
+          display: flex;
+          justify-items: end;
+        }
+
+        h3 {
+          width: 100%;
+          display: flex;
+        }
+      }
+    }
+  }
+}
