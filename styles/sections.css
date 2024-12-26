@@ -178,3 +178,57 @@
     }
   }
 }
+
+#services {
+  background-color: var(--gray-100);
+
+  header {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-bottom: 56px; /* Espaço entre header e container */
+
+    h3 {
+      font: var(--subtitle);
+      margin-top: 88px;
+      color: var(--red-color);
+    }
+
+    h2 {
+      margin-top: 8px;
+    }
+  }
+
+  .container {
+    display: flex;
+    place-items: center;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 0 auto; /* Garante centralização */
+    padding-bottom: 120px;
+
+    figure {
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    figcaption {
+      margin-top: 10px;
+
+      strong {
+        font: var(--title-sm);
+      }
+
+      p {
+        font: var(--text-sm);
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
