@@ -1,17 +1,12 @@
 #intro {
-  width: 1366px;
-  height: 750px;
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
-  /* align-items: center; */
-  /* flex-direction: column; */
-  /* margin-bottom: 183px; */
 
   background-image: url("/assets/images/Background_Intro.png");
   background-size: cover;
   background-position: center;
-
+  
+  
   .container {
     width: 1040px;
     height: 447px;
@@ -20,19 +15,16 @@
 
     .info {
       display: flex;
-      /* justify-content: center; */
-      /* flex-direction: column; */
       margin-bottom: 80px;
 
       header {
-        /* height: 327px; */
-        /* width: 680px; */
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin-left: 180px;
         margin-right: 180px;
+
 
         img {
           margin-bottom: 56px;
@@ -126,10 +118,10 @@
 }
 
 #projects {
-  width: 1366px;
-  height: 917px;
-  display: block;
-  margin-top: 57px;
+
+  display: flex;
+  flex-direction: column;
+  padding-block: 72px 144px;
 
   header {
     display: flex;
@@ -234,9 +226,8 @@
 }
 
 #contact {
-  width: 1366px;
-  height: 787px;
-
+  display: flex;
+  justify-content: center;
   background-image: url(/assets/images/Background_Contacts.png);
   background-size: cover;
   background-position: center;
