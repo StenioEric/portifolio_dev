@@ -44,7 +44,6 @@
         }
 
         h1 {
-
           display: flex;
           justify-content: center;
           margin-top: 8px;
@@ -147,6 +146,8 @@
       background-color: var(--gray-300);
       padding: 12px;
       border-radius: 10px;
+      border: 2px solid transparent; /* Borda inicial transparente */
+      transition: border-color 0.3s ease, transform 0.2s ease; /* Suaviza a borda e o movimento */
 
       h4 {
         font: var(--title-sm);
@@ -160,6 +161,11 @@
 
       img {
         border-radius: 10px;
+      }
+
+      &:hover {
+        border-color: var(--primary-color); /* Cor da borda ao passar o mouse */
+        transform: scale(1.05); /* Aumenta levemente o card para destacar */
       }
     }
   }
@@ -268,11 +274,6 @@
         padding-block: 23px;
         border-radius: 8px;
         padding-inline: 20px;
-
-        /* img {
-          display: flex; */
-        /* justify-items: end;
-        } */
 
         h3 {
           width: 100%;
