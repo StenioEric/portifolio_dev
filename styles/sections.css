@@ -1,30 +1,30 @@
 #intro {
+  width: 1366px;
   display: flex;
-  justify-content: center;
-
+  flex-direction: column;
+  align-items: center;
   background-image: url("/assets/images/Background_Intro.png");
-  background-size: cover;
   background-position: center;
-  
-  
+  background-size: cover;
+
   .container {
     width: 1040px;
-    height: 447px;
+    display: flex;
+    flex-direction: column;
     margin-top: 120px;
-    margin-bottom: 183px;
 
     .info {
       display: flex;
       margin-bottom: 80px;
 
       header {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin-left: 180px;
         margin-right: 180px;
-
 
         img {
           margin-bottom: 56px;
@@ -38,17 +38,15 @@
           font: var(--text-sm);
           color: var(--gray-400);
           display: inherit;
-          justify-content: inherit; /* Centraliza horizontalmente */
+          justify-content: center; /* Centraliza horizontalmente */
           align-items: center; /* Centraliza verticalmente */
-          /* height: 100vh; contêiner ocupa a altura total da tela */
           text-align: center; /* Garante alinhamento centralizado do texto */
         }
 
         h1 {
-          height: 67px;
-          width: inherit;
-          display: inherit;
-          justify-content: inherit;
+
+          display: flex;
+          justify-content: center;
           margin-top: 8px;
           margin-bottom: 20px;
           font: var(--title-lg);
@@ -59,56 +57,53 @@
         }
       }
     }
-  }
+    .tags {
+      display: flex;
+      justify-content: center;
 
-  .tags {
-    display: flex;
-    justify-content: center;
+      ul {
+        display: grid;
+        grid-auto-flow: column;
 
-    ul {
-      display: grid;
-      grid-auto-flow: column;
-      width: 754px;
-      height: 40px;
-      gap: 16px;
+        gap: 16px;
 
-      li {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 114px;
-        height: 40px;
-        border-radius: 20px;
-        background-color: var(--gray-300);
-        gap: 8px;
-        padding-inline: 16px;
-        padding-block: 9px;
-        font: var(--text-md);
+        li {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          width: 114px;
+          height: 40px;
+          border-radius: 20px;
+          background-color: var(--gray-300);
+          gap: 8px;
+          padding-inline: 16px;
+          padding-block: 9px;
+          font: var(--text-md);
 
-        .color-red {
-          fill: var(--red-color); /* Altera a cor para vermelho */
-        }
+          .color-red {
+            fill: var(--red-color); /* Altera a cor para vermelho */
+          }
 
-        .color-gray {
-          fill: var(--gray-500);
-        }
+          .color-gray {
+            fill: var(--gray-500);
+          }
 
-        .color-blue {
-          fill: var(--blue-color);
-        }
+          .color-blue {
+            fill: var(--blue-color);
+          }
 
-        .color-yellow {
-          fill: var(--yellow-color);
-        }
+          .color-yellow {
+            fill: var(--yellow-color);
+          }
 
-        .color-green {
-          fill: var(--green-color);
+          .color-green {
+            fill: var(--green-color);
+          }
         }
       }
     }
   }
-
   .caret-double {
     display: grid;
     place-items: center; /* Centraliza horizontal e verticalmente */
@@ -118,7 +113,7 @@
 }
 
 #projects {
-  
+  width: 1366px;
   display: flex;
   flex-direction: column;
 
@@ -171,6 +166,7 @@
 }
 
 #services {
+  width: 1366px;
   background-color: var(--gray-100);
 
   header {
@@ -225,6 +221,7 @@
 }
 
 #contact {
+  width: 1366px;
   display: flex;
   justify-content: center;
   background-image: url(/assets/images/Background_Contacts.png);
@@ -274,7 +271,7 @@
 
         /* img {
           display: flex; */
-          /* justify-items: end;
+        /* justify-items: end;
         } */
 
         h3 {
