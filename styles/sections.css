@@ -232,10 +232,8 @@
 
 #contact {
   width: 1366px;
-  /* height: 100vh; */
   display: flex;
   justify-content: center;
-  /* background-color: rgb(2, 15, 24); */
   background-image: url("../assets/images/Background_Contacts.png");
   background-size: cover;
   background-position: center;
@@ -265,14 +263,12 @@
     align-items: center;
 
     ul {
-      /* align-items: center; */
       width: 400px;
       list-style: none;
       margin-bottom: 200px;
 
       li {
         display: flex;
-        /* justify-content: space-between; */
         align-items: center;
         gap: 20px;
         background-color: var(--gray-300);
