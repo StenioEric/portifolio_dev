@@ -1,6 +1,6 @@
 #intro {
   width: 1366px;
-  height: 100vh; /* 100% da altura da tela */
+  height: 100%; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,6 +232,7 @@
 
 #contact {
   width: 1366px;
+  height: 100%;
   display: flex;
   justify-content: center;
   background-image: url(/assets/images/Background_Contacts.png);
