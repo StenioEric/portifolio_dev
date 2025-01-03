@@ -28,6 +28,9 @@
 
         img {
           margin-bottom: 56px;
+          width: 100px;
+          height: 100px;
+          border-radius: 100%;
         }
 
         .subtitle {
@@ -273,10 +276,28 @@
         margin-bottom: 16px;
         padding-block: 23px;
         border-radius: 8px;
+        border: 2px solid transparent; /* Borda inicial transparente */
         padding-inline: 20px;
 
         h3 {
           width: 100%;
+        }
+
+        /* &:hover > img {
+          content: url(/assets/icons/LinkedinAzul.svg)
+        } */
+
+        &:hover > img {
+          box-shadow: blue;
+          filter: brightness(0) invert(1) sepia(0) hue-rotate(300deg) saturate(500%); /* Ajustado para uma cor específica */
+        }
+
+        &:hover svg path {
+          fill: #007BFF; /* Altere para a cor desejada, aqui um exemplo de azul */
+        }
+
+        &:hover {
+          border-color: var(--blue-color);
         }
       }
     }
