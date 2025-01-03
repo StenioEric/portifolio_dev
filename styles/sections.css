@@ -1,12 +1,12 @@
 #intro {
   width: 1366px;
-  /* height: 100vh;  */
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: url("../assets/images/Background_Intro.png");
   background-size: cover;
   background-position: center;
+  height: 100vh;
 
   .container {
     width: 1040px;
