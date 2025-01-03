@@ -4,10 +4,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("/assets/images/Background_Intro.png");
+  background-image: url("./assets/images/Background_Intro.png");
   background-position: center;
   background-size: cover;
-
   .container {
     width: 1040px;
     display: flex;
@@ -235,7 +234,8 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  background-image: url(/assets/images/Background_Contacts.png);
+  background-color: rgb(2, 15, 24);
+  /* background-image: url(/assets/images/Background_Contacts.png); */
   background-size: cover;
   background-position: center;
 
@@ -305,3 +305,5 @@
     }
   }
 }
+
+
